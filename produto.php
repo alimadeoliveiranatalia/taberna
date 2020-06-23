@@ -10,7 +10,7 @@ class Produto {
     public function mostrarProduto(){
         $conn = new Conecxao();
         $result = $conn->consultar('SELECT *FROM tb_protuto');
-        $conn->error;
+        
         $r = $result->fecth_assoc();
 
         return $r;
