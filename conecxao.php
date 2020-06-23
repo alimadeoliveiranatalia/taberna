@@ -12,12 +12,17 @@ class Conecxao {
         if ($this->conn->connect_error){
             die('Error '.$this->conn->connect_errno.$this->conn->connect_error);
         }
-        else{
-            echo'<center>CONECTADA</center><br>';
-        }
     }
     public function consultar($sql){
         $this->conectar();
         return $this->conn->query($sql);
+    }
+    //Métodos Especiais
+    public function __construct()
+    {
+        $this->conectar();
+    }
+    public function getConection(){
+        return $this->conectar();
     }
 }
