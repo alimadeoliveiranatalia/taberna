@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fornecedores</title>
+    <style>
+        .formu{
+            margin-left: 36%;
+            width:365px;
+            background: gold;
+            border: 2px solid black;
+        }
+        form{
+            font-size: 35px;
+        }
+        input{
+            height: 45px;
+            width: 255px;
+        }
+        body{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="formu">
+        <form action="incluir_forn.php" method="post">
+            <label for="">Nome do Fornecedor:</label><br>
+            <input type="text" name="nome" placeholder="nome do Fornecedor"><br>
+            
+            <label for="">Quantidade:</label><br>
+            <input type="number" name="quant_compra" placeholder="Informe a quantidade"><br>
+            <label for="">Preço:</label><br>
+            <input type="number" name="p_compra" placeholder="R$00.00"><br>
+            <label for="">Preço por unidade:</label><br>
+            <input type="number" name="preco_unid" placeholder="R$00.00"><br>
+            <label for="text">Data da compra:</label><br>
+            <input type="text" name="data_compra" placeholder="ano-mês-dia"><br>
+            <center><button>Cadastrar Fornecedor</button></center>    
+
+        </form>
+    </div>
+    
+</body>
+</html>
