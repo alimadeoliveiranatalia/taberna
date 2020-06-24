@@ -21,7 +21,7 @@
             require_once 'Db.php';
             require_once 'Produto.php';
 
-            $chamada = new Produto;
+            /*$chamada = new Produto;
             $result = $chamada->listarProduto();
             while($data = $result->fecth_assoc() ){
                 $nome = $data['nome'];
@@ -36,7 +36,25 @@
                 <td>".$data['vencimento']."</td>
                 <td>".$data['preco_venda']."</td>
                 </tr></table></center>";
-            }
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            $r = new Db;
+            $r->conectar2();
             
         
         ?>

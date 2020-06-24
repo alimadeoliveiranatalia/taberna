@@ -19,4 +19,25 @@ class Db {
            $this->conectar();
             return $this->conn->query($sql);
         }
+        public function conectar2(){
+            $this->configura();
+            $this->conn = new mysqli($this->host,$this->user,$this->pass,$this->db);
+            $sql = "SELECT *FROM tb_produto";
+            $result = $this->conn->query($sql);
+            while($data = $result->num_rows ){
+                $nome = $data['nome'];
+                $categoria = $data['categoria'];
+                $quantidade = $data['quantidade'];
+                $vencimento = $data['vencimento'];
+                $valor = $data['preco_venda'];
+                print"<center>";
+                print"<table><tr><td>";
+                print$data['nome']."</td>
+                <td>".$data['categoria']."</td>
+                <td>".$data['vencimento']."</td>
+                <td>".$data['preco_venda']."</td>
+                </tr></table></center>";
+            }
+
+        }
 };
