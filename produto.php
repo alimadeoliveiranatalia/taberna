@@ -1,36 +1,26 @@
 <?php
-require_once 'conecxao.php';
+require_once 'Db.php';
 class Produto {
     //Atributos
     private $cod;
-    private $nome;
-    private $valor;
-
+    public $nome;
+    public $categoria;
+    private $quantidade;
+    public $vencimento;
+    public $valor;
     //Métodos
-    public function mostrarProduto(){
-        $conn = new Conecxao();
-        $result = $conn->consultar('SELECT *FROM tb_protuto');
-        
-        $r = $result->fecth_assoc();
+    public function adcionarProduto(){
+        $conn = new Db;
+        return $conn->consultar("INSERT INTO (nome) VALUE ($this->getNome())");
+    }    
+    public function listarProduto(){
+        $conn = new Db;
+        return $conn->consultar("SELECT *FROM tb_produto");
+    }
+    
 
-        return $r;
-               
-    }
-    public function listar(){
-        $this->mostrarProduto();
-        print'<center><table>';
-        while($row = $this->result->mostrarProduto()){
-            print'<tr>';
-            print'<td>'.$row['nome'].'</td>';
-            print'<td> R$ '.$row['preco_venda'].'</td>';
-            print'</tr>';
-
-        }
-        print'</table></center>';
-    }
-    }
     //Métodos Especiais
-    /*public function getNome(){
+    public function getNome(){
         return $this->nome;
     }
     public function setNome($n){
@@ -41,4 +31,25 @@ class Produto {
     }
     public function setValor($v){
         $this->valor = $v;
-    }*/
+    }
+    public function getCategoria(){
+        return $this->categoria;
+    }
+    public function setCategoria($grupo){
+        $this->categoria = $grupo;
+    }
+    public function getQuantidade(){
+        return $this->quantidade;
+    }
+    public function setQuantidade($quant){
+        $this->quantidade = $quant;
+    }
+    public function getVencimento(){
+        return $this->vencimento;
+    }
+    public function setVencimento($vc){
+        $this->vencimento = $vc;
+    }
+    
+
+}
