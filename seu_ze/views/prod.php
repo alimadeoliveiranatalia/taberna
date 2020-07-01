@@ -202,7 +202,7 @@ $produto =$mysqli->query($conn);
 					        <li>
 					            <div class="products">
 									<a href="levar.php?cod_prod=<?=$mercadoria['cod_prod'];?>">
-										<img src="img_produtos/<?=$mercadoria['cod_prod']?>.png" alt="">
+										<img src="../web/img/img_produtos/<?=$mercadoria['cod_prod']?>.png" alt="">
 									</a>
 									<a href="levar.php?cod_prod=<?=$mercadoria['cod_prod'];?>">
 										<h4><?=$nome=$mercadoria['nome'];?></h4>
@@ -216,23 +216,7 @@ $produto =$mysqli->query($conn);
 									</a>
 									
 								</div>	<!-- End of /.products -->
-					        </li>
-					        <li>
-					            <div class="products">
-									<a href="#">
-										<img src="img/nisin.png" alt="">
-									</a>
-									<a href="#">
-										<h4>Macarrão instântaneo</h4>
-									</a>
-									<p class="price">Apenas: R$1,25</p>
-									<div >
-										<a class="view-link shutter" href="#">
-										<i class="fa fa-plus-circle"></i>Levar?</a>
-									</div>
-								</div>	<!-- End of /.products -->
-					        </li>
-					        
+					        </li>			        
 					        <!--  ... -->
 					    </ul>
 					</div>	<!-- End of /.products-grid -->
@@ -278,14 +262,14 @@ $produto =$mysqli->query($conn);
 							</div>
 						</div>
 						<div class="block">
-							<img src="img/frutas_p.jpg" alt="">
+							<img src="../web/img/frutas_p.jpg" alt="">
 						</div>
 						<div class="block">
 							
 							<ul class="media-list">
 							 	<li class="media">
 							    	<a class="pull-left" href="#">
-							      		<img class="media-object" src="img/frete.png" alt="...">
+							      		<img class="media-object" src="../web/img/frete.png" alt="...">
 							    	</a>
 							    	<div class="media-body">
 							      		<a href="" class="media-heading">Entrega em até 25min após a compra.
@@ -294,7 +278,7 @@ $produto =$mysqli->query($conn);
 							  	</li>
 							  	<li class="media">
 							    	<a class="pull-left" href="#">
-							      		<img class="media-object" src="img/desconto.png" alt="...">
+							      		<img class="media-object" src="../web/img/desconto.png" alt="...">
 							    	</a>
 							    	<div class="media-body">
 							      		<a href="" class="media-heading">Desconto na primeira compra
@@ -325,27 +309,27 @@ $produto =$mysqli->query($conn);
 						<ul class="cash-out pull-left">
 							<li>
 								<a href="#">
-									<img src="images/American-Express.png" alt="">	
+									<img src="../web/images/American-Express.png" alt="">	
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="images/PayPal.png" alt="">	
+									<img src="../web/images/PayPal.png" alt="">	
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="images/Maestro.png" alt="">	
+									<img src="../web/images/Maestro.png" alt="">	
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="images/Visa.png" alt="">	
+									<img src="../web/images/Visa.png" alt="">	
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="images/Visa-Electron.png" alt="">	
+									<img src="../web/images/Visa-Electron.png" alt="">	
 								</a>
 							</li>
 						</ul>
