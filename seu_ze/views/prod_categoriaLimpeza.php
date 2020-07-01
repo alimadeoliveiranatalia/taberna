@@ -8,22 +8,22 @@
 	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Css -->
-	<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="../web/css/nivo-slider.css" type="text/css" />
+	<link rel="stylesheet" href="../web/css/owl.carousel.css">
+	<link rel="stylesheet" href="../web/css/owl.theme.css">
+	<link rel="stylesheet" href="../web/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../web/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../web/css/style.css">
+	<link rel="stylesheet" href="../web/css/responsive.css">
 
 	<!-- jS -->
-	<script src="js/jquery.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
-	<script src="js/owl.carousel.min.js" type="text/javascript"></script>
-	<script src="js/jquery.nicescroll.js"></script>
-	<script src="js/jquery.scrollUp.min.js"></script>
-	<script src="js/main.js" type="text/javascript"></script>
+	<script src="../web/js/jquery.min.js" type="text/javascript"></script>
+	<script src="../web/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../web/js/jquery.nivo.slider.js" type="text/javascript"></script>
+	<script src="../web/js/owl.carousel.min.js" type="text/javascript"></script>
+	<script src="../web/js/jquery.nicescroll.js"></script>
+	<script src="../web/js/jquery.scrollUp.min.js"></script>
+	<script src="../web/js/main.js" type="text/javascript"></script>
 
     <title>Taberna do Seu Zé</title>
 </head>
@@ -125,7 +125,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<a href="#">
-						<img src="img/logo1.png" alt="logo">
+						<img src="../web/img/logo1.png" alt="logo">
 						
 					</a>
 				</div>	<!-- End of /.col-md-12 -->
@@ -175,7 +175,7 @@
     
     <?php
 // mostra produtos do DB
-include("db.php");
+include("../controllers/db.php");
 $sql='select cod_prod, nome, preco_venda from tb_produto where categoria like \'limpeza%\'';
 $prodLimpeza=$mysqli->query($sql);
 
@@ -193,13 +193,13 @@ $prodLimpeza=$mysqli->query($sql);
 					        <li>
 					            <div class="products">
 									<a href="#">
-										<img src="img_produtos/<?=$soLimpeza['cod_prod']?>.png" alt="">
+										<img src="../web/img/img_produtos/<?=$soLimpeza['cod_prod']?>.png" alt="">
 									</a>
 									<a href="#">
 										<h4><?=$nome=$soLimpeza['nome'];?></h4>
 										<p class="price">Apenas: R$ <?=$preco=$soLimpeza['preco_venda'];?></p>
 										<div>
-											<a class="view-link shutter" href="#">
+											<a class="view-link shutter" href="levar.php?cod_prod=<?=$soLimpeza['cod_prod'];?>">
 												<i class="fa fa-plus-circle"></i>Levar?
 											</a>
 										</div>
@@ -254,14 +254,14 @@ $prodLimpeza=$mysqli->query($sql);
 							</div>
 						</div>
 						<div class="block">
-							<img src="img/frutas_p.jpg" alt="">
+							<img src="../web/img/frutas_p.jpg" alt="">
 						</div>
 						<div class="block">
 							
 							<ul class="media-list">
 							 	<li class="media">
 							    	<a class="pull-left" href="#">
-							      		<img class="media-object" src="img/frete.png" alt="...">
+							      		<img class="media-object" src="../web/img/frete.png" alt="...">
 							    	</a>
 							    	<div class="media-body">
 							      		<a href="" class="media-heading">Entrega em até 25min após a compra.
@@ -270,7 +270,7 @@ $prodLimpeza=$mysqli->query($sql);
 							  	</li>
 							  	<li class="media">
 							    	<a class="pull-left" href="#">
-							      		<img class="media-object" src="img/desconto.png" alt="...">
+							      		<img class="media-object" src="../web/img/desconto.png" alt="...">
 							    	</a>
 							    	<div class="media-body">
 							      		<a href="" class="media-heading">Desconto na primeira compra
@@ -301,27 +301,27 @@ $prodLimpeza=$mysqli->query($sql);
 						<ul class="cash-out pull-left">
 							<li>
 								<a href="#">
-									<img src="images/American-Express.png" alt="">	
+									<img src="../web/images/American-Express.png" alt="">	
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="images/PayPal.png" alt="">	
+									<img src="../web/images/PayPal.png" alt="">	
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="images/Maestro.png" alt="">	
+									<img src="../web/images/Maestro.png" alt="">	
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="images/Visa.png" alt="">	
+									<img src="../web/images/Visa.png" alt="">	
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="images/Visa-Electron.png" alt="">	
+									<img src="../web/images/Visa-Electron.png" alt="">	
 								</a>
 							</li>
 						</ul>
