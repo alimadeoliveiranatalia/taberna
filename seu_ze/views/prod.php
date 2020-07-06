@@ -175,9 +175,9 @@
     
     <?php
 // mostra produtos do DB
-include("../controllers/db.php");
+/*include("../controllers/db.php");
 $conn='SELECT *FROM tb_produto';
-$produto =$mysqli->query($conn);
+$produto =$mysqli->query($conn);*/
 /*while($mercadoria=$produto->fetch_assoc()){
     $nome=$mercadoria['nome'];
     $quantidade=$mercadoria['quantidade'];
@@ -198,7 +198,7 @@ $produto =$mysqli->query($conn);
 					</div>	<!-- End of /.Products-heading -->
 					<div class="product-grid">
 					    <ul>
-							<?php while($mercadoria=$produto->fetch_assoc()):?>
+							<?php while($mercadoria=$this->produto->fetch_assoc()):?>
 					        <li>
 					            <div class="products">
 									<a href="levar.php?cod_prod=<?=$mercadoria['cod_prod'];?>">
