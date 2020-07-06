@@ -3,6 +3,7 @@
 
 include("conexao.php");
 $conn= new Conexao();
+$conn->conectar();
 //$dados = $conn->consulta("Select * from tb_produto");
 //$cod = $conn->consulta("select cod_prod from tb_produto");
 //echo"<table border=2>";

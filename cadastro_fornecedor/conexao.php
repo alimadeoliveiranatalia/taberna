@@ -1,49 +1,29 @@
 <?php
 class Conexao {
 
-    private $host;
-    private $user;
-    private $db;
-    private $pass;
-    private $conecta;
-
-    private function configuar(){
-        $dados = parse_ini_file("login.ini");
-        $this->host=$dados['host'];
-        $this->user=$dados['user'];
-        $this->db=$dados['db'];
-        $this->pass=$dados['pass'];
+    public $conn;
+    public function configura(){ /* Recebe como parâmetros o acesso ao servidor */
+        $ini = parse_ini_file('login.ini');
+        $this->host=$ini['host'];
+        $this->user=$ini['user'];
+        $this->db=$ini['db'];
+        //$this->pass=$ini['pass'];
     }
 
-    private function conectar(){
-        $this->configuar();
-        $this->conecta = new mysqli($this->host, $this->user, $this->db, $this->pass);
-
-        // Tratar ERRO DE CONEXAO
-        if (!$this->conecta){
-            echo "Erro de Conexao";
-
-
-        } else { //echo "conectou"; 
-        };
-
-
+    public function conectar(){ /* Faz a conecção com o banco de dados */
+        $this->configura();
+        return $this->conn = new mysqli($this->host,$this->user,$this->db/*,$this->pass*/);
     }
-    
+
+    public function consultar($sql){ /* Faz a consulta ao banco de dados */
+       $this->configura();
+       $this->conectar();
+        return $this->conn->query($sql);
+    }
+        
     public function desconectar(){
 
-        mysqli_close($this->conecta);
-    }
-
-    public function consulta($sql)
-    {
-        $this->conectar();
-        $r = $this->conecta->query($sql);
-        $this->desconectar();
-        return $r;
-
-        
+        mysqli_close($this->conn);
     }
 }
 
-?>
