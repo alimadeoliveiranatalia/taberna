@@ -4,8 +4,10 @@ require_once '../models/Produto.php';
 class ProdutoController extends Produto{
     public function listar(){
         $chamada = new Produto;
-        $chamada->listarProduto();
-        $this->produto;
+        $produto=$chamada->listarProduto();
+        
         require_once '../views/prod.php';
     }
 }
+$objeto= new ProdutoController;
+$objeto->listar();
