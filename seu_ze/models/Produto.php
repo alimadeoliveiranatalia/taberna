@@ -21,6 +21,12 @@ class Produto extends Db{
         $result = $list_prod->consultar("SELECT * FROM tb_produto LIMIT 10");
         return $result;
     }
+    public function listarProdAlimento(){
+        $list_prod_alim = new Db;
+        $list_prod_alim->conectar();
+        $result = $list_prod_alim->consultar('SELECT * FROM tb_produto WHERE categoria LIKE \'Alimentos\'');
+        return $result;
+    }
     public function atualizarProduto(){
         $objeto = new Db;
         $objeto->conectar();
