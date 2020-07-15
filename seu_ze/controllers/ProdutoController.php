@@ -19,5 +19,15 @@ class ProdutoController extends Produto{
         $prodLimpeza = $chamada->listarProdLimpeza();
         require_once '../views/prod_categoriaLimpeza.php';
     }
+    public function listarHP(){
+        $chamada = new Produto;
+        $prodHP = $chamada->listarProdHP();
+        require_once '../views/prod_categoriaHP.php';
+    }
+    public function listarBebidas(){
+        $chamada = new Produto;
+        $prodBebidas = $chamada->listarProdBebida();
+        require_once '../views/prod_categoriaBebidas.php';
+    }
 }
 
