@@ -27,6 +27,12 @@ class Produto extends Db{
         $result = $list_prod_alim->consultar('SELECT * FROM tb_produto WHERE categoria LIKE \'Alimentos\'');
         return $result;
     }
+    public function listarProdLimpeza(){
+        $list_prod = new Db;
+        $list_prod->conectar();
+        $result = $list_prod->consultar('SELECT * FROM tb_produto WHERE categoria LIKE \'limpeza%\' ');
+        return $result;
+    }
     public function atualizarProduto(){
         $objeto = new Db;
         $objeto->conectar();

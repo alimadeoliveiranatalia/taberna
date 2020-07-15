@@ -9,5 +9,15 @@ class ProdutoController extends Produto{
         $produto=$chamada->listarProduto();
         require_once '../views/prod.php';
     }
+    public function listarAlimentos(){
+        $chamada = new Produto;
+        $alimentos = $chamada->listarProdAlimento();
+        require_once '../views/prod_cat_alim.php';
+    }
+    public function listarLimpeza(){
+        $chamada = new Produto;
+        $prodLimpeza = $chamada->listarProdLimpeza();
+        require_once '../views/prod_categoriaLimpeza.php';
+    }
 }
 
