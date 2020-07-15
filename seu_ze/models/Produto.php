@@ -13,8 +13,7 @@ class Produto extends Db{
         $cad_prod = new Db;
         $cad_prod->conectar();
         $cad_prod->consultar("INSERT INTO tb_produto () VALUES()");
-         
-
+        
     }
     public function listarProduto(){
         $list_prod = new Db;

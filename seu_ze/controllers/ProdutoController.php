@@ -6,7 +6,8 @@ class ProdutoController extends Produto{
     // e envia para a view.
     public function listar(){
         $chamada = new Produto;
-        $produto=$chamada->listarProduto();  
+        $produto=$chamada->listarProduto();
+        require_once '../views/prod.php';
     }
 }
 
