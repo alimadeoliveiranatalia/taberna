@@ -173,22 +173,6 @@
 		</div>	<!-- /.container-fluid -->
     </nav>	<!-- End of /.nav -->
     
-    <?php
-// mostra produtos do DB
-/*require_once'../controllers/ProdutoController.php';
-$conn='SELECT *FROM tb_produto';
-$produto =$mysqli->query($conn);*/
-/*while($mercadoria=$produto->fetch_assoc()){
-    $nome=$mercadoria['nome'];
-    $quantidade=$mercadoria['quantidade'];
-    $vencimento=$mercadoria['vencimento'];
-    $preco=$mercadoria['preco_venda'];
-    echo$mercadoria["nome"]. " | " 
-    .$mercadoria["quantidade"]. " | "
-    .$mercadoria["vencimento"]. " | <br>";
-    //.$mercadoria["preco"]."<br>";
-}*/
-?>
 	<section id="shop">
 		<div class="container">
 			<div class="row">
