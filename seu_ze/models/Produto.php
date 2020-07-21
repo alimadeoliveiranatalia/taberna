@@ -15,10 +15,10 @@ class Produto extends Db{
         $cad_prod->consultar("INSERT INTO tb_produto () VALUES()");
         
     }
-    public function listarProduto(){
+    public function listarProduto($cat = null){
         $list_prod = new Db;
         $list_prod->conectar();
-        $result = $list_prod->consultar("SELECT * FROM tb_produto LIMIT 10");
+        $result = $list_prod->consultar('SELECT * FROM tb_produto WHERE categoria LIKE '.$cat.' LIMIT 10');
         return $result;
     }
     public function listarProdAlimento(){
