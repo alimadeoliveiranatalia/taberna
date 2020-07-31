@@ -173,13 +173,7 @@
 		</div>	<!-- /.container-fluid -->
     </nav>	<!-- End of /.nav -->
     
-    <?php
-// mostra produtos do DB
-include("../controllers/db.php");
-$sql='select cod_prod, nome, preco_venda from tb_produto where categoria like \'Alimentos%\'';
-$alimentos=$mysqli->query($sql);
-
-?> 
+    
 	<section id="shop">
 		<div class="container">
 			<div class="row">
