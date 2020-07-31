@@ -1,5 +1,12 @@
 <?php
 require_once '../controllers/ProdutoController.php';
 // chamada para script de produtos
+//$a = new ProdutoController;
+//$a->listarTodos();
 $a = new ProdutoController;
-$a->listarTodos();
+if (isset($_GET['cat'])){
+    $a->listarAlimentos();
+}
+else{
+    $a->listarTodos();
+}
