@@ -26,7 +26,7 @@ class Produto extends Db{
         }
         return $result;
     }
-    public function levarProduto($id){
+    public function levarProduto($cod){
         $levar_prod = new Db;
         $levar_prod->conectar();
         $result = $levar_prod->consultar('SELECT cod_prod, nome, vencimento, preco_venda FROM tb_produto WHERE cod_prod=$cod');
