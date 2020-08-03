@@ -30,6 +30,7 @@ class Produto extends Db{
         $levar_prod = new Db;
         $levar_prod->conectar();
         $result = $levar_prod->consultar('SELECT cod_prod, nome, vencimento, preco_venda FROM tb_produto WHERE cod_prod=$cod');
+        return $result;
     }
     
     public function atualizarProduto(){
