@@ -231,7 +231,7 @@
 									<i class="fa  fa-dot-circle-o"></i>
 									Limpeza
 								</a>
-								<a href="index.php?cat=Higiene Pe" class="list-group-item">
+								<a href="index.php?cat=HP" class="list-group-item">
 									<i class="fa  fa-dot-circle-o"></i>
 									Higiênie Pessoal
 								</a>
