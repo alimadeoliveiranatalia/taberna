@@ -26,30 +26,7 @@ class Produto extends Db{
         }
         return $result;
     }
-    public function listarProdAlimento(){
-        $list_prod_alim = new Db;
-        $list_prod_alim->conectar();
-        $result = $list_prod_alim->consultar('SELECT * FROM tb_produto WHERE categoria LIKE \'Alimentos%\'');
-        return $result;
-    }
-    public function listarProdLimpeza(){
-        $list_prod = new Db;
-        $list_prod->conectar();
-        $result = $list_prod->consultar('SELECT * FROM tb_produto WHERE categoria LIKE \'limpeza%\' ');
-        return $result;
-    }
-    public function listarProdHP(){
-        $list_prod = new Db;
-        $list_prod->conectar();
-        $result = $list_prod->consultar('SELECT * FROM tb_produto WHERE categoria LIKE \'higienie%\'');
-        return $result;
-    }
-    public function listarProdBebida(){
-        $list_prod = new Db;
-        $list_prod->conectar();
-        $result = $list_prod->consultar('SELECT * FROM tb_produto WHERE categoria LIKE \'bebida%\'');
-        return $result;
-    }
+    
     public function atualizarProduto(){
         $objeto = new Db;
         $objeto->conectar();
