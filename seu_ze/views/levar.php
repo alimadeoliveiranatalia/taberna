@@ -175,10 +175,6 @@
     
     <?php
 // mostra produtos do DB
-include("../controllers/db.php");
-$cod=$_GET['cod_prod'];
-$connLevar="SELECT cod_prod, nome, vencimento, preco_venda FROM `tb_produto` where cod_prod=$cod";
-$produtoLevar =$mysqli->query($connLevar);
 $mercadoriaLevar=$produtoLevar->fetch_assoc();
 ?>
 	<section id="shop">
