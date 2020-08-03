@@ -9,6 +9,10 @@ class ProdutoController {
         $produto = $chamada->listarProduto($cat);
         require_once '../views/prod.php';
     }
-    
+    public function selecionarProduto($cod){
+        $chamada = new Produto;
+        $produto = $chamada->levarProduto($cod);
+        require_once '../views/levar.php';
+    }
 }
 
