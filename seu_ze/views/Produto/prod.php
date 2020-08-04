@@ -125,7 +125,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<a href="#">
-						<img src="../web/img/logo1.png" alt="logo">
+						<img src="../../web/img/logo1.png" alt="logo">
 						
 					</a>
 				</div>	<!-- End of /.col-md-12 -->
@@ -186,7 +186,7 @@
 					        <li>
 					            <div class="products">
 									<a href="levar.php?cod_prod=<?=$mercadoria['cod_prod'];?>">
-										<img src="../web/img/img_produtos/<?=$mercadoria['cod_prod']?>.png" alt="">
+										<img src="../../web/img/img_produtos/<?=$mercadoria['cod_prod']?>.png" alt="">
 									</a>
 									<a href="levar.php?cod_prod=<?=$mercadoria['cod_prod'];?>">
 										<h4><?=$nome=$mercadoria['nome'];?></h4>
@@ -246,14 +246,14 @@
 							</div>
 						</div>
 						<div class="block">
-							<img src="../web/img/frutas_p.jpg" alt="">
+							<img src="../../web/img/frutas_p.jpg" alt="">
 						</div>
 						<div class="block">
 							
 							<ul class="media-list">
 							 	<li class="media">
 							    	<a class="pull-left" href="#">
-							      		<img class="media-object" src="../web/img/frete.png" alt="...">
+							      		<img class="media-object" src="../../web/img/frete.png" alt="...">
 							    	</a>
 							    	<div class="media-body">
 							      		<a href="" class="media-heading">Entrega em até 25min após a compra.
@@ -262,7 +262,7 @@
 							  	</li>
 							  	<li class="media">
 							    	<a class="pull-left" href="#">
-							      		<img class="media-object" src="../web/img/desconto.png" alt="...">
+							      		<img class="media-object" src="../../web/img/desconto.png" alt="...">
 							    	</a>
 							    	<div class="media-body">
 							      		<a href="" class="media-heading">Desconto na primeira compra
@@ -293,27 +293,27 @@
 						<ul class="cash-out pull-left">
 							<li>
 								<a href="#">
-									<img src="../web/images/American-Express.png" alt="">	
+									<img src="../../web/images/American-Express.png" alt="">	
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="../web/images/PayPal.png" alt="">	
+									<img src="../../web/images/PayPal.png" alt="">	
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="../web/images/Maestro.png" alt="">	
+									<img src="../../web/images/Maestro.png" alt="">	
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="../web/images/Visa.png" alt="">	
+									<img src="../../web/images/Visa.png" alt="">	
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<img src="../web/images/Visa-Electron.png" alt="">	
+									<img src="../../web/images/Visa-Electron.png" alt="">	
 								</a>
 							</li>
 						</ul>
