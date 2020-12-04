@@ -185,14 +185,14 @@
 							<?php while($mercadoria=$produto->fetch_assoc()):?>
 					        <li>
 					            <div class="products">
-									<a href="levar.php?cod_prod=<?=$mercadoria['cod_prod'];?>">
-										<img src="../../web/img/img_produtos/<?=$mercadoria['cod_prod']?>.png" alt="">
+									<a href="levar.php?cod_prod=<?=$mercadoria['id_produto'];?>">
+										<img src="../../web/img/img_produtos/<?=$mercadoria['id_produto']?>.png" alt="">
 									</a>
-									<a href="levar.php?cod_prod=<?=$mercadoria['cod_prod'];?>">
+									<a href="levar.php?cod_prod=<?=$mercadoria['id_produto'];?>">
 										<h4><?=$nome=$mercadoria['nome'];?></h4>
 										<p class="price">Apenas: R$ <?=$preco=$mercadoria['preco_venda'];?></p>
 										<div>
-											<a class="view-link shutter" href="levar.php?cod_prod=<?=$mercadoria['cod_prod'];?>">
+											<a class="view-link shutter" href="levar.php?cod_prod=<?=$mercadoria['id_produto'];?>">
 												<i class="fa fa-plus-circle"></i>Levar?
 											</a>
 										</div>

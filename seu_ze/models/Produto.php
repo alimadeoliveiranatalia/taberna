@@ -19,10 +19,10 @@ class Produto extends Db{
         $list_prod = new Db;
         $list_prod->conectar();
         if (isset($cat)){
-            $result = $list_prod->consultar('SELECT * FROM tb_produto WHERE categoria LIKE\''.$cat.'%\'');
+            $result = $list_prod->consultar('SELECT * FROM produto WHERE categoria LIKE\''.$cat.'%\'');
         }
         else{
-            $result = $list_prod->consultar('SELECT * FROM tb_produto LIMIT 10');
+            $result = $list_prod->consultar('SELECT * FROM produto LIMIT 10');
         }
         return $result;
     }
