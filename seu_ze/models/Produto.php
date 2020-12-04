@@ -19,7 +19,7 @@ class Produto extends Db{
         $list_prod = new Db;
         $list_prod->conectar();
         if (isset($cat)){
-            $result = $list_prod->consultar('SELECT * FROM produto WHERE categoria LIKE\''.$cat.'%\'');
+            $result = $list_prod->consultar('SELECT * FROM produto WHERE categoria=$cat');
         }
         else{
             $result = $list_prod->consultar('SELECT * FROM produto LIMIT 10');
@@ -29,7 +29,7 @@ class Produto extends Db{
     public function levarProduto($cod){
         $levar_prod = new Db;
         $levar_prod->conectar();
-        $result = $levar_prod->consultar('SELECT cod_prod, nome, vencimento, preco_venda FROM tb_produto WHERE cod_prod=$cod');
+        $result = $levar_prod->consultar('SELECT id_produto, nome, vencimento, preco_venda FROM produto WHERE id_produto=$cod');
         return $result;
     }
     
