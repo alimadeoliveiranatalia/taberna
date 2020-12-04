@@ -190,7 +190,7 @@ $mercadoriaLevar=$produtoLevar->fetch_assoc();
 					        <li>
 					            <div class="products">
 									<a href="#">
-										<img src="../web/img/img_produtos/<?=$mercadoriaLevar['cod_prod']?>.png" alt="">
+										<img src="../web/img/img_produtos/<?=$mercadoriaLevar['id_produto']?>.png" alt="">
 									</a>
 									<a href="#">
 										<h4><?=$nome=$mercadoriaLevar['nome'];?></h4>

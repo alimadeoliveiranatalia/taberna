@@ -223,15 +223,15 @@
 						<div class="block">
 							<h4>Categorias</h4>
 							<div class="list-group">
-								<a href="index.php?cat=Alimentos" class="list-group-item">
+								<a href="index.php?cat=1" class="list-group-item">
 									<i class="fa  fa-dot-circle-o"></i>
 									Alimentos
 								</a>
-								<a href="index.php?cat=limpeza" class="list-group-item">
+								<a href="index.php?cat=3" class="list-group-item">
 									<i class="fa  fa-dot-circle-o"></i>
 									Limpeza
 								</a>
-								<a href="index.php?cat=HP" class="list-group-item">
+								<a href="index.php?cat=4" class="list-group-item">
 									<i class="fa  fa-dot-circle-o"></i>
 									Higiênie Pessoal
 								</a>
@@ -239,7 +239,7 @@
 									<i class="fa  fa-dot-circle-o"></i>
 									Papelaria
 								</a>
-								<a href="index.php?cat=bebidas" class="list-group-item">
+								<a href="index.php?cat=2" class="list-group-item">
 									<i class="fa  fa-dot-circle-o"></i>
 									Bebidas
 								</a>
