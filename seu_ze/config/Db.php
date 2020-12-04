@@ -4,7 +4,7 @@ class Db{
     private $mysqli;
     //Métodos
     public function conectar(){
-        $this->mysqli = new mysqli('localhost','root','','taberna');
+        $this->mysqli = new mysqli('localhost','root','','estoque');
         if ($this->mysqli->connect_error) {
             die('Erro de Conecxão ('.$this->mysqli->connect_errno.')'.$this->mysqli->connect_error);
         }

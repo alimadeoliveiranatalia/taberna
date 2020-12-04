@@ -44,4 +44,14 @@ class Produto extends Db{
         $objeto->consultar("DELETE ");
 
     }
+    public function prodfirbce($cod){
+        $levar_prod = new Db;
+        $levar_prod->conectar();
+        $result = $levar_prod->consultar('SELECT tb_produto.cod_prod, tb_produto.nome, tb_produto.vencimento, tb_produto.preco_venda 
+        tb_fornecedor.nome_fornecedor, tb_fornecedor.cnpj  FROM tb_produto 
+        inner join tb_fornecedor on (tb_fornecedor,cod_fornecedor = tb_produto,codFornecedor_fk ) WHERE tb_produto.cod_prod=$cod');
+        return $result;
+    }
+    
+
 }
