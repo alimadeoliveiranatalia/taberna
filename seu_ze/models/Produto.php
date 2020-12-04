@@ -19,10 +19,10 @@ class Produto extends Db{
         $list_prod = new Db;
         $list_prod->conectar();
         if (isset($cat)){
-            $result = $list_prod->consultar('SELECT * FROM produto WHERE categoria=$cat');
+            $result = $list_prod->consultar('SELECT nome, preco_venda FROM produto WHERE cod_categoria=$cat');
         }
         else{
-            $result = $list_prod->consultar('SELECT * FROM produto LIMIT 10');
+            $result = $list_prod->consultar('SELECT * FROM produto LIMIT 9');
         }
         return $result;
     }
