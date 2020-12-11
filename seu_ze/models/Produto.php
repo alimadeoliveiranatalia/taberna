@@ -1,5 +1,5 @@
 <?php
-require_once '../config/Db.php';
+require_once '../../config/Db.php';
 class Produto extends Db{
     //Atributos
     public $nome;
