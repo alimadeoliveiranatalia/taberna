@@ -185,7 +185,7 @@
 							<?php while($mercadoria=$produto->fetch_assoc()):?>
 					        <li>
 					            <div class="products">
-									<a href="levar.php?cod_prod=<?=$mercadoria['id_produto'];?>">
+									<a href="levar.php?cod_prod=<?=$mercadoriaLevar['id_produto'];?>">
 										<img src="../../web/img/img_produtos/<?=$mercadoria['id_produto']?>.png" alt="">
 									</a>
 									<a href="levar.php?cod_prod=<?=$mercadoria['id_produto'];?>">
