@@ -1,5 +1,5 @@
 <?php
-require_once '../models/Produto.php';
+require_once '../../models/Produto.php';
 
 class ProdutoController {
     //O controller busca com a Model uma lista de contatos
@@ -12,7 +12,7 @@ class ProdutoController {
     public function selecionarProduto($cod){
         $chamada = new Produto;
         $produtoLevar = $chamada->levarProduto($cod);
-        require_once '../../seu_ze/views/Produto/levar.php';
+        require_once '../../views/Produto/levar.php';
     }
 }
 
