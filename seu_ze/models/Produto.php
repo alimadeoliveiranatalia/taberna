@@ -1,5 +1,5 @@
 <?php
-require_once '../../config/Db.php';
+require_once '../config/Db.php';
 class Produto extends Db{
     //Atributos
     public $nome;
@@ -19,7 +19,7 @@ class Produto extends Db{
         $list_prod = new Db;
         $list_prod->conectar();
         if (isset($cat)){
-            $result = $list_prod->consultar('SELECT nome, preco_venda FROM produto WHERE cod_categoria=$cat');
+            $result = $list_prod->consultar('SELECT nome, preco_venda FROM produto WHERE cod_categoria='.$cat);
         }
         else{
             $result = $list_prod->consultar('SELECT * FROM produto LIMIT 9');
@@ -29,7 +29,7 @@ class Produto extends Db{
     public function levarProduto($cod){
         $levar_prod = new Db;
         $levar_prod->conectar();
-        $result = $levar_prod->consultar('SELECT id_produto, nome, vencimento, preco_venda FROM produto WHERE id_produto=$cod');
+        $result = $levar_prod->consultar('SELECT id_produto, nome, vencimento, preco_venda FROM produto WHERE id_produto='.$cod);
         return $result;
     }
     
