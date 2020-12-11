@@ -8,22 +8,22 @@
 	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Css -->
-	<link rel="stylesheet" href="../web/css/nivo-slider.css" type="text/css" />
-	<link rel="stylesheet" href="../web/css/owl.carousel.css">
-	<link rel="stylesheet" href="../web/css/owl.theme.css">
-	<link rel="stylesheet" href="../web/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../web/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../web/css/style.css">
-	<link rel="stylesheet" href="../web/css/responsive.css">
+	<link rel="stylesheet" href="../../web/css/nivo-slider.css" type="text/css" />
+	<link rel="stylesheet" href="../../web/css/owl.carousel.css">
+	<link rel="stylesheet" href="../../web/css/owl.theme.css">
+	<link rel="stylesheet" href="../../web/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../web/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../web/css/style.css">
+	<link rel="stylesheet" href="../../web/css/responsive.css">
 
 	<!-- jS -->
-	<script src="../web/js/jquery.min.js" type="text/javascript"></script>
-	<script src="../web/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="../web/js/jquery.nivo.slider.js" type="text/javascript"></script>
-	<script src="../web/js/owl.carousel.min.js" type="text/javascript"></script>
-	<script src="../web/js/jquery.nicescroll.js"></script>
-	<script src="../web/js/jquery.scrollUp.min.js"></script>
-	<script src="../web/js/main.js" type="text/javascript"></script>
+	<script src="../../web/js/jquery.min.js" type="text/javascript"></script>
+	<script src="../../web/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../../web/js/jquery.nivo.slider.js" type="text/javascript"></script>
+	<script src="../../web/js/owl.carousel.min.js" type="text/javascript"></script>
+	<script src="../../web/js/jquery.nicescroll.js"></script>
+	<script src="../../web/js/jquery.scrollUp.min.js"></script>
+	<script src="../../web/js/main.js" type="text/javascript"></script>
 
     <title>Taberna do Seu Zé</title>
 </head>
@@ -125,7 +125,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<a href="#">
-						<img src="../web/img/logo1.png" alt="logo">
+						<img src="../../web/img/logo1.png" alt="logo">
 						
 					</a>
 				</div>	<!-- End of /.col-md-12 -->
