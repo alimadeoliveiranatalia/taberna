@@ -196,7 +196,7 @@
 												<i class="fa fa-plus-circle"></i>Levar?
 											</a>
 										</div>
-										<?php endwhile ?>
+										<?php endwhile ;?>
 									</a>
 									
 								</div>	<!-- End of /.products -->
