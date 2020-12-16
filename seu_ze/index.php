@@ -1,14 +1,4 @@
 <?php
-/*require_once'config/Router.php';
-class Index{
-    function __construct($url)
-    {
-        new Router($url);
-        
-    }
-    $url = isset($_GET['url']) ? $_GET['url'] : 'home';
-    new Index($url);
-}*/
 require_once 'controllers/ProdutoController.php';
 // chamada para script de produtos
 $a = new ProdutoController;
