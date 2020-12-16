@@ -9,10 +9,11 @@ class Produto extends Db{
     public $vencimento;
     public $preco_venda;
     //Métodos
-    public function cadastrarProduto(){
+    public function cadastrarProduto($categoria,$fornecedor,$nome,$vencimento,$quantidade,$preco,$codBarra){
         $cad_prod = new Db;
         $cad_prod->conectar();
-        $cad_prod->consultar("INSERT INTO tb_produto () VALUES()");
+        $cad_prod->consultar("INSERT INTO produto (cod_categoria,cod_fornecedor,nome,vencimento,quant_atual,preco_venda,cod_barra) 
+        VALUES($categoria,$fornecedor,$nome,$vencimento,$quantidade,$preco,$codBarra)");
         
     }
     public function listarProduto($cat = null){
